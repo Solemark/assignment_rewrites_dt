@@ -1,8 +1,6 @@
 import 'package:web/web.dart';
 
-/**
- * This class is for building the dart side JS widgets
- */
+///This class is for building the dart side JS widgets
 class BMIView {
   HTMLInputElement height = HTMLInputElement();
   HTMLInputElement weight = HTMLInputElement();

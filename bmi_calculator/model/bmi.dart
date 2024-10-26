@@ -1,16 +1,12 @@
 import 'dart:math';
 
-/**
- * Data class for BMI
- */
+/// Data class for BMI
 class BMI {
   double height;
   double weight;
   BMI(this.height, this.weight);
 
-  /**
-   * finds BMI rating from weight/height
-   */
+  /// finds [BMI] rating from weight/height
   String get rating {
     String output = "";
     double total = this.weight / pow((this.height / 100), 2);

@@ -2,9 +2,7 @@ import 'package:web/web.dart';
 import '../model/bmi.dart';
 import '../view/bmi_view.dart';
 
-/**
- * This class is for application logic
- */
+/// This class is for application logic
 class BMIController {
   BMIView? view = null;
   BMI? bmi = null;
@@ -14,9 +12,7 @@ class BMIController {
     view!.clearButton.onClick.listen(this.clear);
   }
 
-  /**
-   * Submit button press
-   */
+  /// Submit button press
   void submit(Event e) {
     this.bmi = new BMI(
       double.parse(this.view!.height.value),
@@ -26,9 +22,7 @@ class BMIController {
     this.view!.displayArea.value = this.bmi.toString();
   }
 
-  /**
-   * Clear's the view
-   */
+  /// Clear the view
   void clear(Event e) {
     this.view!.height.value = "";
     this.view!.weight.value = "";
