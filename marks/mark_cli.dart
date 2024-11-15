@@ -15,6 +15,7 @@ class MarkCLI {
     run();
   }
 
+  /// run the marks CLI
   void run() {
     print('University Mark Management System');
     while (true) {
@@ -36,6 +37,7 @@ class MarkCLI {
     }
   }
 
+  /// create a new student [Mark]
   String newStudent() {
     String? name = null;
     while (name == null) {
@@ -53,6 +55,7 @@ class MarkCLI {
     return '${this.linebreak}NEW STUDENT:\n${this.markArray.last.toString()}';
   }
 
+  /// search for an existing student [Mark]
   String searchStudent() {
     print('Enter name of student to search');
     String search = stdin.readLineSync() ?? '';
@@ -62,6 +65,7 @@ class MarkCLI {
     return output;
   }
 
+  /// display all current students [Mark]'s
   String displayStudents() {
     String output = '${this.linebreak}DISPLAY ALL STUDENTS:';
     int total = 0;
