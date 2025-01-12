@@ -3,25 +3,21 @@ import '../data/Booking.dart';
 import 'Bookings.dart';
 
 class BookingCLI {
-  final List<String> instructions = [
-    '1 to add new booking',
-    '2 to search existing booking',
-    '3 to list all bookings',
-    '4 to update a booking',
-    '5 to remove a booking',
-    'Enter any other key to quit'
-  ];
+  final String instructions = """
+    1 to add new booking
+    2 to search existing booking
+    3 to list all bookings
+    4 to update a booking
+    5 to remove a booking
+    Enter any other key to quit
+""";
   List<Luxury> bookingList = [];
   Bookings bookings = new Bookings();
 
   BookingCLI() {
-    _run();
-  }
-
-  void _run() {
     print('Booking Management System');
     while (true) {
-      print('${linebreak}${instructions.join('\n')}');
+      print('${linebreak}${instructions}');
       int? input = int.tryParse(stdin.readLineSync() ?? '0');
       switch (input) {
         case 1:

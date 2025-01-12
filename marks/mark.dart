@@ -5,5 +5,5 @@ class Mark {
   Mark(this.name, this.mark);
 
   @override
-  String toString() => '${this.name}, ${this.mark}';
+  String toString() => "${this.name}, ${this.mark}";
 }

@@ -2,25 +2,26 @@ import 'package:web/web.dart';
 import '../data/Booking.dart';
 
 class GUI {
-  List<Luxury> bookingList = [];
-  HTMLInputElement gardenArea = HTMLInputElement();
-  HTMLInputElement numberOfWeeks = HTMLInputElement();
-  HTMLInputElement rooms = HTMLInputElement();
-  HTMLInputElement address = HTMLInputElement();
-  HTMLInputElement bookingDate = HTMLInputElement();
-  HTMLInputElement bookingID = HTMLInputElement();
-  HTMLInputElement contactNumber = HTMLInputElement();
-  HTMLInputElement propertyOwnerName = HTMLInputElement();
-  HTMLInputElement securityAlarmCheck = HTMLInputElement();
-  HTMLInputElement poolMaintenance = HTMLInputElement();
-  HTMLButtonElement submitButton = HTMLButtonElement();
-  HTMLButtonElement searchButton = HTMLButtonElement();
-  HTMLButtonElement updateButton = HTMLButtonElement();
-  HTMLButtonElement removeButton = HTMLButtonElement();
-  HTMLButtonElement clearButton = HTMLButtonElement();
-  HTMLTextAreaElement displayArea = HTMLTextAreaElement();
+  late List<Luxury> bookingList;
+  late HTMLInputElement gardenArea;
+  late HTMLInputElement numberOfWeeks;
+  late HTMLInputElement rooms;
+  late HTMLInputElement address;
+  late HTMLInputElement bookingDate;
+  late HTMLInputElement bookingID;
+  late HTMLInputElement contactNumber;
+  late HTMLInputElement propertyOwnerName;
+  late HTMLInputElement securityAlarmCheck;
+  late HTMLInputElement poolMaintenance;
+  late HTMLButtonElement submitButton;
+  late HTMLButtonElement searchButton;
+  late HTMLButtonElement updateButton;
+  late HTMLButtonElement removeButton;
+  late HTMLButtonElement clearButton;
+  late HTMLTextAreaElement displayArea;
 
   GUI() {
+    this.bookingList = [];
     this.securityAlarmCheck.setAttribute("type", "checkbox");
     this.poolMaintenance.setAttribute("type", "checkbox");
     this.gardenArea = document.querySelector('#gardenArea') as HTMLInputElement;

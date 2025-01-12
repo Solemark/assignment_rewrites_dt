@@ -2,7 +2,10 @@ import 'dart:io';
 
 class Week3 {
   Week3() {
-    cli();
+    print('Enter student grade (0-100):');
+    int mark = int.parse(stdin.readLineSync() ?? '0');
+
+    print(getGrade(mark));
   }
 
   String getGrade(int mark) {
@@ -27,13 +30,6 @@ class Week3 {
         output = 'Invalid mark!';
     }
     return output;
-  }
-
-  void cli() {
-    print('Enter student grade (0-100):');
-    int mark = int.parse(stdin.readLineSync() ?? '0');
-
-    print(getGrade(mark));
   }
 }
 

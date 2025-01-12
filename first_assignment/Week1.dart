@@ -1,9 +1,5 @@
 class Week1 {
   Week1() {
-    cli();
-  }
-
-  void cli() {
     print("*   *  *");
     print("** **  *");
     print("* * *  *");

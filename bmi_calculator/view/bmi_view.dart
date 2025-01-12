@@ -2,11 +2,11 @@ import 'package:web/web.dart';
 
 ///This class is for building the dart side JS widgets
 class BMIView {
-  HTMLInputElement height = HTMLInputElement();
-  HTMLInputElement weight = HTMLInputElement();
-  HTMLButtonElement submitButton = HTMLButtonElement();
-  HTMLButtonElement clearButton = HTMLButtonElement();
-  HTMLTextAreaElement displayArea = HTMLTextAreaElement();
+  late HTMLInputElement height;
+  late HTMLInputElement weight;
+  late HTMLButtonElement submitButton;
+  late HTMLButtonElement clearButton;
+  late HTMLTextAreaElement displayArea;
 
   BMIView() {
     this.height = document.querySelector("#height") as HTMLInputElement;
